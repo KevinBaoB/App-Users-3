@@ -1,5 +1,5 @@
 # Your PremiumUser class goes here
-from users.User import User
+from User import User
 
 class PremiumUser(User):
     def __init__(self, name, age, nationality, status = 'Premium'):

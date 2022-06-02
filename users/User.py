@@ -6,20 +6,17 @@ class User:
         self.age = age
         self.nationality = nationality
         self.post = []
-    
-
+        
     def __str__(self):
         return f"My name is {self.name}, I'm {self.age} years old and I am {self.nationality}!"
     
     @property
     def get_post(self):
-
         print('Getting Past Posts: ')
-        return self.post
+        print(self.post)
     
     # @get_post.setter
     def add_post(self, str):
-        
         self.str = str
         self.post.append(str)
 
@@ -30,4 +27,8 @@ class User:
         self.post.pop(int(self.index))
 
 
-# kevin = User("Kevin", 24, "American")
+kevin = User("Kevin", 24, "American")
+print(kevin)
+kevin.get_post
+kevin.add_post('hi')
+kevin.get_post
